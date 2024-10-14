@@ -1,0 +1,9 @@
+name: missing_share_data.yml
+on: push
+
+jobs:
+  share:
+    runs-on: ubuntu-latest
+    steps:
+      - run: export RESULT="Hello"
+      - run: echo "${RESULT}"
