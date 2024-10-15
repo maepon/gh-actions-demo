@@ -4,8 +4,8 @@ jobs:
     comment:
         runs-on: ubuntsu-latest
         permissions:
-            contents: read
             pull-requests: write
+            contents: read
         steps:
             - uses: actions/checkout@v4
             - run: gh pr comment "${GITHUB_HEAD_REF}" --body "Hello, ${GITHUB_ACTOR}"
